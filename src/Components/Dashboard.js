@@ -71,10 +71,10 @@ const Dashboard = () => {
           </div>
         </Col>
         <Col span={12}>
-          <div>Title / Subtitle</div>
+        <Title level={5}>Title / Subtitle</Title>
           <Input
             placeholder="Filter creatives"
-            style={{ width: 200, marginLeft: 10 }}
+            style={{ width: 200}}
             onChange={(e) => setFilter(e.target.value)}
           />
         </Col>
@@ -84,7 +84,7 @@ const Dashboard = () => {
               percent={(creatives.length / maxCreatives) * 100}
               showInfo={false}
             />
-            <span>{`${creatives.length}/${maxCreatives} Creatives`}</span>
+            <Title level={5}>{`${creatives.length}/${maxCreatives} Creatives`}</Title>
           </div>
         </Col>
         <Col span={24}>
